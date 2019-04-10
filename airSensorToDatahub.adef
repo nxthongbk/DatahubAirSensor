@@ -1,0 +1,19 @@
+executables:
+{
+	airSensorToDatahub = ( airSensorToDatahubComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( airSensorToDatahub )
+	}
+}
+
+bindings:
+{
+	airSensorToDatahub.airSensorToDatahubComponent.io -> dataHub.io
+	airSensorToDatahub.airSensorToDatahubComponent.ma_airSensor -> airSensor.ma_airSensor
+}
+

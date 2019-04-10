@@ -1,0 +1,13 @@
+requires:
+{
+	api:
+	{
+		$LEGATO_ROOT/apps/sample/dataHub/io.api
+		ma_airSensor = ma_airSensor.api
+	}
+}
+
+sources:
+{
+	airSensorToDatahub.c
+}

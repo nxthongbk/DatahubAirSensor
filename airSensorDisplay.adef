@@ -1,0 +1,18 @@
+executables:
+{
+	airSensorDisplay = ( airSensorDisplayComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( airSensorDisplay )
+	}
+}
+
+bindings:
+{
+	airSensorDisplay.airSensorDisplayComponent.io -> dataHub.io
+	airSensorDisplay.airSensorDisplayComponent.admin -> dataHub.admin
+}
